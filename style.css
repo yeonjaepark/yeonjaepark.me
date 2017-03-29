@@ -1,0 +1,36 @@
+body {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  padding: 0;
+  margin: 0;
+  background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+  height: 800px;
+}
+
+.home h1 {
+  padding-top: 5em;
+  margin: 0;
+  text-align: center;
+  font-size: 275%;
+  font-family: 'Fascinate Inline', cursive;
+}
+
+.home h2 {
+  text-align: center;
+  font-size: 200%;
+  font-family: 'Barrio', cursive;
+}
+
+.home p {
+  text-align: center;
+  font-size: 2em;
+  padding-top: 4em;
+  font-family: 'Cabin Sketch', cursive;
+}
