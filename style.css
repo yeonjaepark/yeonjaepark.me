@@ -1,36 +1,118 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
-  background-color: #f2f2f2;
-  margin: 0;
-  padding: 0;
-}
-
-.home {
   padding: 0;
   margin: 0;
-  background-image: url('background.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-  height: 800px;
+  background-color: #FCFFEB;
+  font-family: Amatic SC;
 }
 
-.home h1 {
-  padding-top: 5em;
+ul {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #867AA3;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 1em;
+  padding: 1em;
+  font-size: 30px;
+}
+
+nav li {
+  margin-right: 25px;
+  font-size: 30px;
+  padding-right: 5px;
+  padding-left: 5px;
+  border-radius: 10px;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  font-size: 30px;
+}
+
+nav li:not(.logo):hover {
+  background-color: rgba(100, 100, 100, 0.2);
+}
+
+.main {
+  color: #FFBA89;
+  font-family: 'Amatic SC';
+  padding-bottom: 3em;
+}
+
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.image {
+  padding: 0 6em 0 6em;
+}
+
+.image img {
+  border-radius: 50%;
+  margin: 4em 0 0 0;
+  padding: 0;
+  height: 400px;
+  width: 400px;
+}
+
+.text {
+  padding: 4em 6em 0 0;
+}
+
+.text h1 {
   margin: 0;
-  text-align: center;
-  font-size: 275%;
-  font-family: 'Fascinate Inline', cursive;
+  font-size: 70px;
 }
-
-.home h2 {
-  text-align: center;
-  font-size: 200%;
-  font-family: 'Barrio', cursive;
-}
-
-.home p {
-  text-align: center;
+.text p {
+  color: #FF9E99;
   font-size: 2em;
-  padding-top: 4em;
-  font-family: 'Cabin Sketch', cursive;
+  font-family: Patrick Hand;
+}
+
+.contact {
+  background-color: #FECDAA;
+  padding: 0;
+  margin: 0;
+}
+
+.contact h1 {
+  font-size: 40px;
+  text-align: center;
+  color: #474350;
+  padding-top: 1em;
+}
+
+.contact ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  padding: 2em 20em 10em 20em;
+  margin: 0;
+}
+
+.contact a {
+  font-size: 100px;
+  color: #474350;
+  transition: .3s;
+}
+
+.contact a:hover {
+  color: #8E9AAF;
 }
